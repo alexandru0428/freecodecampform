@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 id="title">Survey Form</h1>
+        <p id="description">Sign up right here!</p>
+    </header>
+    <main>
+        <form action="/action_page.php" id="survey-form">
+            
+            <!-- text input  -->
+            
+            <label for="name" id="name-label">Name</label> <br>
+            <input type="text" id="name" placeholder="John Doe" required> <br>
+
+            <label for="email" id="email-label">Email</label> <br>
+            <input type="email" id="email" placeholder="johndoe@something.com" required> <br>
+
+            <label for="number" id="number-label">Age</label> <br>
+            <input type="number" id="number" min="18" max="99" placeholder="21"> <br>
+            
+            <!-- select menu -->
+            
+            <label for="language" id="language-label">Language</label> <br>
+            <select name="language" id="dropdown" required>
+                <option value="en">English</option>
+                <option value="fr">French</option>
+                <option value="de">German</option>
+                <option value="sp">Spanish</option>
+            </select> <br>
+
+            <!-- radio buttons -->
+
+            <p class="bold">Select your desired work type</p>
+
+            <label for="fulltime" id="fulltime-label">Full-Time</label> <br>
+            
+            <input type="radio" name="worktype" id="fulltime" value="fulltime" checked> <br>
+            
+            <label for="parttime" id="parttime-label">Part-Time</label> <br>
+
+            <input type="radio" name="worktype" id="parttime" value="parttime"> <br>
+            
+            <label for="hybrid" id="hybrid-label">Hybrid</label> <br>
+
+            <input type="radio" name="worktype" id="hybrid" value="hybrid"> <br>
+
+            <!-- checkboxes -->
+
+            <p class="bold">What is your experience</p>
+
+            <label for="junior" id="junior-label">Junior</label> <br>
+            <input type="checkbox" name="junior" id="junior" value="junior"> <br>
+
+            <label for="intermediate" id="intermediate-label">Intermediate</label><br>
+            <input type="checkbox" name="intermediate" id="intermediate" value="intermediate"> <br>
+
+            <label for="senior" id="senior-label">Senior</label> <br>
+            <input type="checkbox" name="senior" id="senior" value="senior"> <br>
+
+            <!-- textarea section  -->
+
+            <p class="bold">Tell us anything</p>
+            <textarea name="message" id="message" cols="30" rows="10" placeholder="Lorem ipsum dolor sit amet." required></textarea> <br>
+
+            <!-- submit button  -->
+
+            <button id="submit">Submit</button>
+
+        </form>
+    </main>
+
+    <footer>
+        <p>copyrighted &copy;2024 by Alexandru</p>
+    </footer>
+    
+</body>
+</html>

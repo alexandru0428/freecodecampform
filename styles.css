@@ -1,0 +1,87 @@
+:root {
+    --background:rgb(2, 6, 23);
+    --text:#f8fafc;
+    --important-text:#67e8f9;
+    --font:Nunito Sans;
+}
+
+body{
+    background-color: var(--background);
+    color: var(--text);
+    font-family: var(--font);
+
+}
+h1{
+    color: var(--important-text);
+}
+header{
+    text-align: center;
+    border-bottom: 0.1rem solid var(--text);
+}
+main{
+    text-align: center;
+    padding: 5em;
+    background-image: url(pexels-thiago-matos-3343801.jpg);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+form{
+    background-color: rgba(2, 6, 23, 0.9);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em;
+}
+#name-label, #email-label, #number-label, #language-label{
+    font-size: 1.25rem;
+    font-weight: bold; 
+}
+input {
+    font-family: var(--font);
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: var(--background);
+    border: solid 0.1rem var(--text);
+    color: var(--text);
+}
+form .bold{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+select{
+    margin: 1em;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: var(--background);
+    color: var(--text);
+    border: solid 0.1rem var(--text);
+}
+textarea{
+    background-color: var(--background);
+    color: var(--text);
+    border: solid 0.1rem var(--text);
+    border-radius: 1em;
+    padding: 1em;
+}
+button{
+    font-weight: bold;
+    padding: 1em;
+    border-radius: 1em;
+    background-color: var(--background);
+    color: var(--important-text);
+    border: solid 0.1rem var(--important-text);
+    margin: 1em;
+}
+button:hover{
+    background-color: var(--important-text);
+    color: var(--background);
+    border: solid 0.1rem var(--important-text);
+    cursor: pointer;
+    transition-duration: 1s;
+}
+footer{
+    border-top: solid 0.1rem var(--text);
+    text-align: center;
+
+}
